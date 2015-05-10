@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Nearest Places of Interest</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+
+  <body style="margin:0px; padding:0px;" onload="initialize()">
+  
+    <div id="locationField">
+        <select id="username" style="width:140px">
+        <option value="tom">Tom</option>
+        <option value="jane">Jane</option>
+        <option value="dave">Dave</option>
+        <option value="sarah">Sarah</option>
+        <option value="john">John</option>
+        <option value="default" selected> Select Username </option>  
+      </select>
+      <div id="near"></div>
+	  <select id="interest" style="width:140px">
+		<option value="bank">Bank</option>
+        <option value="school">School</option>
+        <option value="restaurant">Restaurant</option>
+        <option value="hospital">Hospitals</option>
+       <option value="default" selected> Select Interest </option>
+      </select>
+    </div>
+    
+    <div id="map-canvas"></div>
+
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+   	
+	    <div id="info-content">
+      <table>
+        <tr id="iw-url-row" class="iw_table_row">
+          <td id="iw-icon" class="iw_table_icon"></td>
+          <td id="iw-url"></td>
+        </tr>
+        <tr id="iw-address-row" class="iw_table_row">
+          <td class="iw_attribute_name">Address:</td>
+          <td id="iw-address"></td>
+        </tr>
+        <tr id="iw-phone-row" class="iw_table_row">
+          <td class="iw_attribute_name">Telephone:</td>
+          <td id="iw-phone"></td>
+        </tr>
+         <tr id="iw-website-row" class="iw_table_row">
+          <td class="iw_attribute_name">Website:</td>
+          <td id="iw-website"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

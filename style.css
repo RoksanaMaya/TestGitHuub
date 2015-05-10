@@ -1,0 +1,64 @@
+
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      table {
+        font-size: 12px;
+      }
+      #map-canvas {
+        width: 100%;
+      }
+      #listing {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        left: 442px;
+        top: 0px;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+
+	  #near {
+        position: relative;
+        width: 100px;
+         padding: 4px;
+        z-index: 5;
+       }
+      #locationField {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+		padding: 10px;
+        left: 0px;
+        top: 0px;
+        z-index: 5;
+        background-color: #191970;
+      }
+      #controls {
+        position: absolute;
+        left: 300px;
+        width: 140px;
+        top: 0px;
+        z-index: 5;
+        background-color: #fff;
+      }
+ 
+
+      #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+      }
+      .iw_table_row {
+        height: 15px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
+
